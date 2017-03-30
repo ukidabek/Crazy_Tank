@@ -310,6 +310,38 @@ InputManager:
     axis: 0
     joyNum: 1
   - serializedVersion: 3
+    m_Name: Horizontal Left Gamepad 2
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: escape
+    altNegativeButton: 
+    altPositiveButton: joystick button 1
+    gravity: 3
+    dead: 0.2
+    sensitivity: 1
+    snap: 1
+    invert: 0
+    type: 2
+    axis: 0
+    joyNum: 2
+  - serializedVersion: 3
+    m_Name: Horizontal Right Gamepad 2
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: escape
+    altNegativeButton: 
+    altPositiveButton: joystick button 1
+    gravity: 3
+    dead: 0.2
+    sensitivity: 1
+    snap: 1
+    invert: 0
+    type: 2
+    axis: 3
+    joyNum: 2
+  - serializedVersion: 3
     m_Name: Vertical Left Gamepad 1
     descriptiveName: 
     descriptiveNegativeName: 
@@ -325,3 +357,35 @@ InputManager:
     type: 2
     axis: 1
     joyNum: 1
+  - serializedVersion: 3
+    m_Name: Vertical Left Gamepad 2
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: escape
+    altNegativeButton: 
+    altPositiveButton: joystick button 1
+    gravity: 3
+    dead: 0.2
+    sensitivity: 1
+    snap: 1
+    invert: 0
+    type: 2
+    axis: 1
+    joyNum: 2
+  - serializedVersion: 3
+    m_Name: Vertical Right Gamepad 2
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: escape
+    altNegativeButton: 
+    altPositiveButton: joystick button 1
+    gravity: 3
+    dead: 0.2
+    sensitivity: 1
+    snap: 1
+    invert: 0
+    type: 2
+    axis: 4
+    joyNum: 2

@@ -22,12 +22,19 @@ namespace CrazyTank.Inputs
 
 		public override Vector3 MovementVector 
 		{
-			get { return base.MovementVector; }
+			get { return _leftAnalog.Axis; }
 		}
 
 		public override Vector3 LookVector 
 		{
-			get { return base.LookVector; }
+			get 
+			{ 
+				Vector2 reading = _rightAnalog.Axis;
+				reading.x *= xLookAxisSensitivity;
+				reading.y *= yLookAxisSensitivity;
+
+				return reading; 
+			}
 		}
 
 		protected override void Awake ()
