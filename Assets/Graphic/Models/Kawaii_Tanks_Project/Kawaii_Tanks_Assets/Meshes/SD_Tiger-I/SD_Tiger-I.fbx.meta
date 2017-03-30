@@ -36,6 +36,20 @@ ModelImporter:
     100056: SD_Tiger-I_TrackBelt_R
     100058: SD_Tiger-I_TrackPiece_L_Sp0300
     100060: SD_Tiger-I_TrackPiece_R_Sp0300
+    100062: SD_Tiger-I_StaticWheels_L.001
+    100064: SD_Tiger-I_StaticWheels_L.002
+    100066: SD_Tiger-I_StaticWheels_L.003
+    100068: SD_Tiger-I_StaticWheels_L.004
+    100070: SD_Tiger-I_StaticWheels_L.005
+    100072: SD_Tiger-I_StaticWheels_L.006
+    100074: SD_Tiger-I_StaticWheels_L.007
+    100076: SD_Tiger-I_StaticWheels_R.001
+    100078: SD_Tiger-I_StaticWheels_R.002
+    100080: SD_Tiger-I_StaticWheels_R.003
+    100082: SD_Tiger-I_StaticWheels_R.004
+    100084: SD_Tiger-I_StaticWheels_R.005
+    100086: SD_Tiger-I_StaticWheels_R.006
+    100088: SD_Tiger-I_StaticWheels_R.007
     400000: //RootNode
     400002: SD_Tiger-I_Barrel
     400004: SD_Tiger-I_Barrel_Collider
@@ -67,6 +81,20 @@ ModelImporter:
     400056: SD_Tiger-I_TrackBelt_R
     400058: SD_Tiger-I_TrackPiece_L_Sp0300
     400060: SD_Tiger-I_TrackPiece_R_Sp0300
+    400062: SD_Tiger-I_StaticWheels_L.001
+    400064: SD_Tiger-I_StaticWheels_L.002
+    400066: SD_Tiger-I_StaticWheels_L.003
+    400068: SD_Tiger-I_StaticWheels_L.004
+    400070: SD_Tiger-I_StaticWheels_L.005
+    400072: SD_Tiger-I_StaticWheels_L.006
+    400074: SD_Tiger-I_StaticWheels_L.007
+    400076: SD_Tiger-I_StaticWheels_R.001
+    400078: SD_Tiger-I_StaticWheels_R.002
+    400080: SD_Tiger-I_StaticWheels_R.003
+    400082: SD_Tiger-I_StaticWheels_R.004
+    400084: SD_Tiger-I_StaticWheels_R.005
+    400086: SD_Tiger-I_StaticWheels_R.006
+    400088: SD_Tiger-I_StaticWheels_R.007
     2300000: SD_Tiger-I_Barrel
     2300002: SD_Tiger-I_Barrel_Collider
     2300004: SD_Tiger-I_Belt_L_Sp0280
@@ -97,6 +125,20 @@ ModelImporter:
     2300054: SD_Tiger-I_TrackBelt_R
     2300056: SD_Tiger-I_TrackPiece_L_Sp0300
     2300058: SD_Tiger-I_TrackPiece_R_Sp0300
+    2300060: SD_Tiger-I_StaticWheels_L.001
+    2300062: SD_Tiger-I_StaticWheels_L.002
+    2300064: SD_Tiger-I_StaticWheels_L.003
+    2300066: SD_Tiger-I_StaticWheels_L.004
+    2300068: SD_Tiger-I_StaticWheels_L.005
+    2300070: SD_Tiger-I_StaticWheels_L.006
+    2300072: SD_Tiger-I_StaticWheels_L.007
+    2300074: SD_Tiger-I_StaticWheels_R.001
+    2300076: SD_Tiger-I_StaticWheels_R.002
+    2300078: SD_Tiger-I_StaticWheels_R.003
+    2300080: SD_Tiger-I_StaticWheels_R.004
+    2300082: SD_Tiger-I_StaticWheels_R.005
+    2300084: SD_Tiger-I_StaticWheels_R.006
+    2300086: SD_Tiger-I_StaticWheels_R.007
     3300000: SD_Tiger-I_Barrel
     3300002: SD_Tiger-I_Barrel_Collider
     3300004: SD_Tiger-I_Belt_L_Sp0280
@@ -127,6 +169,20 @@ ModelImporter:
     3300054: SD_Tiger-I_TrackBelt_R
     3300056: SD_Tiger-I_TrackPiece_L_Sp0300
     3300058: SD_Tiger-I_TrackPiece_R_Sp0300
+    3300060: SD_Tiger-I_StaticWheels_L.001
+    3300062: SD_Tiger-I_StaticWheels_L.002
+    3300064: SD_Tiger-I_StaticWheels_L.003
+    3300066: SD_Tiger-I_StaticWheels_L.004
+    3300068: SD_Tiger-I_StaticWheels_L.005
+    3300070: SD_Tiger-I_StaticWheels_L.006
+    3300072: SD_Tiger-I_StaticWheels_L.007
+    3300074: SD_Tiger-I_StaticWheels_R.001
+    3300076: SD_Tiger-I_StaticWheels_R.002
+    3300078: SD_Tiger-I_StaticWheels_R.003
+    3300080: SD_Tiger-I_StaticWheels_R.004
+    3300082: SD_Tiger-I_StaticWheels_R.005
+    3300084: SD_Tiger-I_StaticWheels_R.006
+    3300086: SD_Tiger-I_StaticWheels_R.007
     4300000: SD_Tiger-I_Idler_Arm_L
     4300002: SD_Tiger-I_Cannon_Collider
     4300004: SD_Tiger-I_Turret_Collider
@@ -157,6 +213,20 @@ ModelImporter:
     4300054: SD_Tiger-I_StaticWheels_R
     4300056: SD_Tiger-I_TrackBelt_L
     4300058: SD_Tiger-I_TrackBelt_R
+    4300060: SD_Tiger-I_StaticWheels_R.007
+    4300062: SD_Tiger-I_StaticWheels_R.006
+    4300064: SD_Tiger-I_StaticWheels_R.005
+    4300066: SD_Tiger-I_StaticWheels_R.004
+    4300068: SD_Tiger-I_StaticWheels_R.003
+    4300070: SD_Tiger-I_StaticWheels_R.002
+    4300072: SD_Tiger-I_StaticWheels_R.001
+    4300074: SD_Tiger-I_StaticWheels_L.007
+    4300076: SD_Tiger-I_StaticWheels_L.006
+    4300078: SD_Tiger-I_StaticWheels_L.005
+    4300080: SD_Tiger-I_StaticWheels_L.004
+    4300082: SD_Tiger-I_StaticWheels_L.003
+    4300084: SD_Tiger-I_StaticWheels_L.002
+    4300086: SD_Tiger-I_StaticWheels_L.001
   materials:
     importMaterials: 1
     materialName: 0
