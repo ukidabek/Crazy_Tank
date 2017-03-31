@@ -202,22 +202,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _owner: {fileID: 0}
-  xLookAxisSensitivity: 3
-  yLookAxisSensitivity: 3
+  xLookAxisSensitivity: 1
+  yLookAxisSensitivity: 1
   _leftAnalog:
     inputName: 
     horizontalAxisName: Horizontal Left Gamepad 1
     verticaAxisName: Vertical Left Gamepad 1
     axisReading: {x: 0, y: 0}
     invertHorizontaAxis: 0
-    invertVerticaAxis: 0
+    invertVerticaAxis: 1
   _rightAnalog:
     inputName: 
     horizontalAxisName: Horizontal Right Gamepad 1
     verticaAxisName: Vertical Right Gamepad 1
     axisReading: {x: 0, y: 0}
     invertHorizontaAxis: 0
-    invertVerticaAxis: 0
+    invertVerticaAxis: 1
 --- !u!114 &114485019580603522
 MonoBehaviour:
   m_ObjectHideFlags: 1

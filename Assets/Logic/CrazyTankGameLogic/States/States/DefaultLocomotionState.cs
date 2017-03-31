@@ -41,6 +41,10 @@ namespace CrazyTank.Character
 
 		public override void OnUpdate ()
 		{
+			Vector2 leftTrack = driver.InputCollector.CurrentInputSourceInstance.MovementVector;
+			Vector2 rightTrack = driver.InputCollector.CurrentInputSourceInstance.LookVector;
+
+			driver.Tank.Ride (leftTrack.y, rightTrack.y);
 		}
 
 		public override void OnLateUpdate ()
@@ -49,7 +53,6 @@ namespace CrazyTank.Character
 
 		public override void OnFixedUpdate ()
 		{
-//			driver.Tank.Ride (100f, 100f);
 		}
 	}
 }
