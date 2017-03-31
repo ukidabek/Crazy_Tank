@@ -721,6 +721,28 @@ Transform:
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 9f8ff89320a2df2499316a13f2f7d8c9, type: 3}
   m_PrefabInternal: {fileID: 964831251}
+--- !u!114 &1659397646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1659397645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d370627f6ebe9449adb9820c39167b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentStateTypes: []
+  showReferenceValidationLog: 1
+  defaultStateCreator: {fileID: 0}
+  stateCreators: []
+  stateModesCreators: []
+  animationHandlingData: {fileID: 0}
+  _meshReference: {fileID: 0}
+  characterXRotationAngle: 0
+  characterYRotationAngle: 0
+  settings: {fileID: 0}
+  _playerNumber: 0
 --- !u!65 &1659397647
 BoxCollider:
   m_ObjectHideFlags: 0
