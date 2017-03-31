@@ -20,6 +20,10 @@ namespace CrazyTank.Inputs
 		[SerializeField]
 		private AnalogInput _rightAnalog = new AnalogInput();
 
+		[SerializeField]
+		private AnalogInput _triggers = new AnalogInput();
+
+
 		public override Vector3 MovementVector 
 		{
 			get { return _leftAnalog.Axis; }
@@ -37,10 +41,17 @@ namespace CrazyTank.Inputs
 			}
 		}
 
+		public override Vector3 TriggersVector 
+		{
+			get { return _triggers.Axis; }
+		}
+
 		protected override void Awake ()
 		{
 			physicalInputs.Add (_leftAnalog);
 			physicalInputs.Add (_rightAnalog);
+
+			physicalInputs.Add (_triggers);
 
 			base.Awake ();
 		}

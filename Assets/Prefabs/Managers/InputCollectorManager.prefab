@@ -218,6 +218,13 @@ MonoBehaviour:
     axisReading: {x: 0, y: 0}
     invertHorizontaAxis: 0
     invertVerticaAxis: 1
+  _triggers:
+    inputName: 
+    horizontalAxisName: Left Trigger Gamepad 1
+    verticaAxisName: Right Trigger Gamepad 1
+    axisReading: {x: 0, y: 0}
+    invertHorizontaAxis: 0
+    invertVerticaAxis: 0
 --- !u!114 &114485019580603522
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -243,6 +250,13 @@ MonoBehaviour:
     inputName: 
     horizontalAxisName: Horizontal Right Gamepad 2
     verticaAxisName: Vertical Right Gamepad 2
+    axisReading: {x: 0, y: 0}
+    invertHorizontaAxis: 0
+    invertVerticaAxis: 0
+  _triggers:
+    inputName: 
+    horizontalAxisName: 
+    verticaAxisName: 
     axisReading: {x: 0, y: 0}
     invertHorizontaAxis: 0
     invertVerticaAxis: 0

@@ -17,6 +17,22 @@ namespace CrazyTank.Tank
 		}
 
 		[SerializeField]
+		private BrakeObject _brake = null;
+		public BrakeObject Brake 
+		{
+			get { return this._brake; }
+			set { _brake = value;}
+		}
+
+		[SerializeField]
+		private EngineObject _engine = null;
+		public EngineObject Engine 
+		{
+			get { return this._engine; }
+			set { _engine = value; }
+		}
+
+		[SerializeField]
 		private TrackObject _leftTrack = null;
 		public TrackObject LeftTrack 
 		{
@@ -32,10 +48,12 @@ namespace CrazyTank.Tank
 			set { _rightTrack = value; }
 		}
 
-		public void Ride(float leftTrackRpm, float rightTrackRpm)
+		public void Ride(float leftTrackRpm, float rightTrackRpm, float gas, float brake)
 		{
 			_controlValues.LeftTrackPower = leftTrackRpm;
 			_controlValues.RightTrackPower = rightTrackRpm;
+			_controlValues.Gas = gas;
+			_controlValues.TrackBrakePower = brake;
 		}
 	}
 }

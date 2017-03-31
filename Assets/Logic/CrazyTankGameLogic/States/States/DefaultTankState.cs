@@ -49,11 +49,14 @@ namespace CrazyTank.Tank
 
 		public override void OnFixedUpdate ()
 		{
-			_tank.LeftTrack.Rotate (1000 * _tank.ControlValues.LeftTrackPower);
-			_tank.RightTrack.Rotate (1000 * _tank.ControlValues.RightTrackPower);
+			_tank.Engine.ApplayGas (_tank.ControlValues.Gas);
 
-			_tank.LeftTrack.Brake (1000 * _tank.ControlValues.LeftTrackBrakePower);
-			_tank.RightTrack.Brake (1000 * _tank.ControlValues.RightTrackBrakePower);
+			_tank.LeftTrack.Rotate (_tank.Engine.Rpm * _tank.ControlValues.LeftTrackPower);
+			_tank.RightTrack.Rotate (_tank.Engine.Rpm * _tank.ControlValues.RightTrackPower);
+
+			float brakePower = _tank.Brake.Brake (_tank.ControlValues.TrackBrakePower);
+			_tank.LeftTrack.Brake (brakePower);
+			_tank.RightTrack.Brake (brakePower);
 
 		}
 	}

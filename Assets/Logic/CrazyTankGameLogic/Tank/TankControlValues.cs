@@ -9,6 +9,14 @@ namespace CrazyTank.Tank
 	[Serializable]
 	public class TankControlValues 
 	{
+		[SerializeField, Range(0f, 1f)]
+		private float _gas= 0f;
+		public float Gas 
+		{
+			get { return this._gas; } 
+			set { _gas = value; }
+		}
+
 		[SerializeField, Range(-1f, 1f)]
 		private float leftTrackPower = 0f;
 		public float LeftTrackPower 
@@ -26,20 +34,11 @@ namespace CrazyTank.Tank
 		}
 
 		[SerializeField, Range(0f, 1f)]
-		private float leftTrackBrakePower = 0f;
-		public float LeftTrackBrakePower 
+		private float trackBrakePower = 0f;
+		public float TrackBrakePower 
 		{
-			get { return this.leftTrackBrakePower; } 
-			set { leftTrackBrakePower = value; }
+			get { return this.trackBrakePower; } 
+			set { trackBrakePower = value; }
 		}
-
-		[SerializeField, Range(0f, 1f)]
-		private float rightTrackBrakePower = 0f;
-		public float RightTrackBrakePower 
-		{
-			get { return this.rightTrackBrakePower; }
-			set { rightTrackBrakePower = value; }
-		}
-
 	}
 }
