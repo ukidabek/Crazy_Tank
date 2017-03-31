@@ -49,6 +49,7 @@ namespace CrazyTank.Character
 
 		public override void OnFixedUpdate ()
 		{
+			driver.Tank.Ride (100f, 100f);
 		}
 	}
 }
