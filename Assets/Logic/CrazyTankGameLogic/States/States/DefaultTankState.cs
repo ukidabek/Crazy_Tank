@@ -5,24 +5,24 @@ using System.Collections.Generic;
 
 using BaseGameLogic.States;
 
-namespace CrazyTank.Character
+namespace CrazyTank.Tank
 {
-	public class DefaultLocomotionState : BaseState 
+	public class DefaultTankState : BaseState 
 	{
-		protected DriverController driver = null;
+		private TankObject _tank = null;
 
-		public DefaultLocomotionState (
+		public DefaultTankState (
 			BaseStateObject controlledObject, 
 			BaseInputCache inputCache, 
 			BaseAnimationHandlingCache animationHandlingCache) 
 			: base (controlledObject, inputCache, animationHandlingCache)
 		{
-			if (controlledObject is DriverController) 
+			if (controlledObject is TankObject) 
 			{
-				driver = ControlledObject as DriverController;
+				_tank = controlledObject as TankObject;
 			}
 		}
-		
+
 		public override void Enter ()
 		{
 		}
@@ -49,7 +49,12 @@ namespace CrazyTank.Character
 
 		public override void OnFixedUpdate ()
 		{
-//			driver.Tank.Ride (100f, 100f);
+			_tank.LeftTrack.Rotate (1000 * _tank.ControlValues.LeftTrackPower);
+			_tank.RightTrack.Rotate (1000 * _tank.ControlValues.RightTrackPower);
+
+			_tank.LeftTrack.Brake (1000 * _tank.ControlValues.LeftTrackBrakePower);
+			_tank.RightTrack.Brake (1000 * _tank.ControlValues.RightTrackBrakePower);
+
 		}
 	}
 }
