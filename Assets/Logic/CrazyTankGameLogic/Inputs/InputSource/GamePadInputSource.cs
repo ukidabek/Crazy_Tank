@@ -5,9 +5,9 @@ using System.Collections.Generic;
 
 using BaseGameLogic.Inputs;
 
-namespace CrazyTank.Inputs
+namespace CrazyTank.Input
 {
-	public class GamePadInputSource : BaseInputSource 
+	public class GamePadInputSource : BaseCrazyTankInputSource 
 	{
 		public override InputSourceEnum InputSourceType 
 		{
@@ -22,7 +22,6 @@ namespace CrazyTank.Inputs
 
 		[SerializeField]
 		private AnalogInput _triggers = new AnalogInput();
-
 
 		public override Vector3 MovementVector 
 		{
@@ -52,6 +51,9 @@ namespace CrazyTank.Inputs
 			physicalInputs.Add (_rightAnalog);
 
 			physicalInputs.Add (_triggers);
+
+			physicalInputs.Add (_gearUp);
+			physicalInputs.Add (_gearDown);
 
 			base.Awake ();
 		}

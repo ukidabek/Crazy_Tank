@@ -33,6 +33,14 @@ namespace CrazyTank.Tank
 		}
 
 		[SerializeField]
+		private GearboxObject _gearbox = null;
+		public GearboxObject Gearbox 
+		{
+			get { return this._gearbox; }
+			set { _gearbox = value; }
+		}
+
+		[SerializeField]
 		private TrackObject _leftTrack = null;
 		public TrackObject LeftTrack 
 		{

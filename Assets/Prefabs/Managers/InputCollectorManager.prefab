@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4810708420133338}
-  - component: {fileID: 114319997559068484}
+  - component: {fileID: 114260026129241778}
   m_Layer: 0
   m_Name: InputCollector 1
   m_TagString: Untagged
@@ -51,7 +51,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4177062630748426}
-  - component: {fileID: 114740206157519092}
+  - component: {fileID: 114401168014565502}
   m_Layer: 0
   m_Name: InputCollector 2
   m_TagString: Untagged
@@ -111,7 +111,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1711649521140914}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -153,14 +153,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1839566823173456}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4810708420133338}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114319997559068484
+--- !u!114 &114260026129241778
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -168,7 +168,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1076532737775174}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19c4284f15677d45a7e1ff93a2a937b, type: 3}
+  m_Script: {fileID: 11500000, guid: 624fc012dd1f37048b21eecadf6e5a8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _playerNumber: 0
@@ -188,8 +188,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _inputCollectors:
-  - {fileID: 114319997559068484}
-  - {fileID: 114740206157519092}
+  - {fileID: 114260026129241778}
+  - {fileID: 114401168014565502}
 --- !u!114 &114344138395268740
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -204,6 +204,20 @@ MonoBehaviour:
   _owner: {fileID: 0}
   xLookAxisSensitivity: 1
   yLookAxisSensitivity: 1
+  _gearDown:
+    inputName: GearDown
+    buttonState: 3
+    invert: 0
+    toAnalogConversionSpeed: 1
+    anagloValue: 0
+    keyCode: 334
+  _gearUp:
+    inputName: GearUp
+    buttonState: 3
+    invert: 0
+    toAnalogConversionSpeed: 1
+    anagloValue: 0
+    keyCode: 335
   _leftAnalog:
     inputName: 
     horizontalAxisName: Horizontal Left Gamepad 1
@@ -225,6 +239,22 @@ MonoBehaviour:
     axisReading: {x: 0, y: 0}
     invertHorizontaAxis: 0
     invertVerticaAxis: 0
+--- !u!114 &114401168014565502
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1359082065003236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 624fc012dd1f37048b21eecadf6e5a8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerNumber: 1
+  currentInputSourceEnum: 0
+  inputSourcesContainerObject: {fileID: 1711649521140914}
+  inputSources:
+  - {fileID: 114485019580603522}
 --- !u!114 &114485019580603522
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -239,6 +269,20 @@ MonoBehaviour:
   _owner: {fileID: 0}
   xLookAxisSensitivity: 3
   yLookAxisSensitivity: 3
+  _gearDown:
+    inputName: 
+    buttonState: 3
+    invert: 0
+    toAnalogConversionSpeed: 1
+    anagloValue: 0
+    keyCode: 0
+  _gearUp:
+    inputName: 
+    buttonState: 3
+    invert: 0
+    toAnalogConversionSpeed: 1
+    anagloValue: 0
+    keyCode: 0
   _leftAnalog:
     inputName: 
     horizontalAxisName: Horizontal Left Gamepad 2
@@ -260,19 +304,3 @@ MonoBehaviour:
     axisReading: {x: 0, y: 0}
     invertHorizontaAxis: 0
     invertVerticaAxis: 0
---- !u!114 &114740206157519092
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1359082065003236}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19c4284f15677d45a7e1ff93a2a937b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _playerNumber: 1
-  currentInputSourceEnum: 0
-  inputSourcesContainerObject: {fileID: 1711649521140914}
-  inputSources:
-  - {fileID: 114485019580603522}

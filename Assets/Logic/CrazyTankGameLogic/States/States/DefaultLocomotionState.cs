@@ -5,11 +5,14 @@ using System.Collections.Generic;
 
 using BaseGameLogic.States;
 
+using CrazyTank.Input;
+
 namespace CrazyTank.Character
 {
 	public class DefaultLocomotionState : BaseState 
 	{
 		protected DriverController driver = null;
+
 
 		public DefaultLocomotionState (
 			BaseStateObject controlledObject, 
@@ -41,9 +44,9 @@ namespace CrazyTank.Character
 
 		public override void OnUpdate ()
 		{
-			Vector2 leftTrack = driver.InputCollector.CurrentInputSourceInstance.MovementVector;
-			Vector2 rightTrack = driver.InputCollector.CurrentInputSourceInstance.LookVector;
-			Vector2 triggers = driver.InputCollector.CurrentInputSourceInstance.TriggersVector;
+			Vector2 leftTrack = driver.CrazyTankInputCollector.CurrentInputSourceInstance.MovementVector;
+			Vector2 rightTrack = driver.CrazyTankInputCollector.CurrentInputSourceInstance.LookVector;
+			Vector2 triggers = driver.CrazyTankInputCollector.CurrentInputSourceInstance.TriggersVector;
 
 			driver.Tank.Ride (leftTrack.y, rightTrack.y, triggers.y, triggers.x);
 		}

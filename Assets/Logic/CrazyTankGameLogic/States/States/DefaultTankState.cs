@@ -51,8 +51,10 @@ namespace CrazyTank.Tank
 		{
 			_tank.Engine.ApplayGas (_tank.ControlValues.Gas);
 
-			_tank.LeftTrack.Rotate (_tank.Engine.Rpm * _tank.ControlValues.LeftTrackPower);
-			_tank.RightTrack.Rotate (_tank.Engine.Rpm * _tank.ControlValues.RightTrackPower);
+			_tank.Gearbox.InRpm = _tank.Engine.Rpm;
+
+			_tank.LeftTrack.Rotate (_tank.Gearbox.OutRpm * _tank.ControlValues.LeftTrackPower);
+			_tank.RightTrack.Rotate (_tank.Gearbox.OutRpm * _tank.ControlValues.RightTrackPower);
 
 			float brakePower = _tank.Brake.Brake (_tank.ControlValues.TrackBrakePower);
 			_tank.LeftTrack.Brake (brakePower);
