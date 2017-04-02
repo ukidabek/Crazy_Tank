@@ -52,9 +52,6 @@ namespace CrazyTank.Input
 
 			physicalInputs.Add (_triggers);
 
-			physicalInputs.Add (_gearUp);
-			physicalInputs.Add (_gearDown);
-
 			base.Awake ();
 		}
 	}

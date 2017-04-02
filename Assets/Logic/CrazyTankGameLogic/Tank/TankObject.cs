@@ -63,5 +63,17 @@ namespace CrazyTank.Tank
 			_controlValues.Gas = gas;
 			_controlValues.TrackBrakePower = brake;
 		}
+
+		public void GearUp()
+		{
+			Engine.ShiftGearUp ();
+			Gearbox.GearUp ();
+		}
+
+		public void GearDown()
+		{
+			Engine.ShiftGearDown ();
+			Gearbox.GearDown ();
+		}
 	}
 }

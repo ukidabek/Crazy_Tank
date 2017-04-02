@@ -3,6 +3,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
+using BaseGameLogic.Inputs;
 using BaseGameLogic.States;
 
 using CrazyTank.Input;
@@ -49,6 +50,17 @@ namespace CrazyTank.Character
 			Vector2 triggers = driver.CrazyTankInputCollector.CurrentInputSourceInstance.TriggersVector;
 
 			driver.Tank.Ride (leftTrack.y, rightTrack.y, triggers.y, triggers.x);
+
+			if (driver.CrazyTankInputCollector.CurrentCrazyTankInputSource.GearUp.State == ButtonStateEnum.Down) 
+			{
+				driver.Tank.GearUp ();
+			}
+
+			if (driver.CrazyTankInputCollector.CurrentCrazyTankInputSource.GearDown.State == ButtonStateEnum.Down) 
+			{
+				driver.Tank.GearDown ();
+			}
+
 		}
 
 		public override void OnLateUpdate ()

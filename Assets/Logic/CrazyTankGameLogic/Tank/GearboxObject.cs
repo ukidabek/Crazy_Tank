@@ -36,6 +36,23 @@ namespace CrazyTank.Tank
 			get { return this._outRpm; }
 			set { _outRpm = value; }
 		}
+
+		public void GearUp()
+		{
+			++_currentGear;
+			CheackGearIndex ();
+		}
+
+		public void GearDown()
+		{
+			--_currentGear;
+			CheackGearIndex ();
+		}
+
+		private void CheackGearIndex()
+		{
+			_currentGear = Mathf.Clamp (_currentGear, 0, _gears.Count - 1);
+		}
 	}
 
 	[Serializable]

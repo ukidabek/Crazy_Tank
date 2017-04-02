@@ -38,9 +38,15 @@ namespace CrazyTank.Tank
 			_rpm = Mathf.Clamp (_rpm, 0f, _maxRpm);
 		}
 
-		public void ShiftGear()
+		public void ShiftGearUp()
 		{
 			_rpm *= 1f - _gertShiftRpmLoss;
 		}
+
+		public void ShiftGearDown()
+		{
+			_rpm *= 1f + _gertShiftRpmLoss;
+		}
+
 	}
 }
