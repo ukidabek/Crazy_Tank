@@ -9,9 +9,9 @@ namespace CrazyTank.Input
 {
 	public class GamePadInputSource : BaseCrazyTankInputSource 
 	{
-		public override InputSourceEnum InputSourceType 
+		public override string InputSourceType 
 		{
-			get { return InputSourceEnum.GamePadInput; }
+			get { return this.GetType().ToString(); }
 		}
 
 		[SerializeField]
