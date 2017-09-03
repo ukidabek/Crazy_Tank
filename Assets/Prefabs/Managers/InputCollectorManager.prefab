@@ -172,8 +172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerNumber: 0
-  currentInputSourceEnum: 0
-  inputSourcesContainerObject: {fileID: 1839566823173456}
+  currentInputSourceType: 
   inputSources:
   - {fileID: 114344138395268740}
 --- !u!114 &114336746813710168
@@ -187,9 +186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55a3f325d60149443b28ee34374a40ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _inputCollectors:
-  - {fileID: 114260026129241778}
-  - {fileID: 114401168014565502}
+  _inputCollectors: []
 --- !u!114 &114344138395268740
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -204,6 +201,13 @@ MonoBehaviour:
   _owner: {fileID: 0}
   xLookAxisSensitivity: 1
   yLookAxisSensitivity: 1
+  _pauseButton:
+    inputName: 
+    buttonState: 3
+    invert: 0
+    toAnalogConversionSpeed: 1
+    anagloValue: 0
+    keyCode: 0
   _gearDown:
     inputName: GearDown
     buttonState: 3
@@ -251,8 +255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerNumber: 1
-  currentInputSourceEnum: 0
-  inputSourcesContainerObject: {fileID: 1711649521140914}
+  currentInputSourceType: 
   inputSources:
   - {fileID: 114485019580603522}
 --- !u!114 &114485019580603522
@@ -269,6 +272,13 @@ MonoBehaviour:
   _owner: {fileID: 0}
   xLookAxisSensitivity: 3
   yLookAxisSensitivity: 3
+  _pauseButton:
+    inputName: 
+    buttonState: 3
+    invert: 0
+    toAnalogConversionSpeed: 1
+    anagloValue: 0
+    keyCode: 0
   _gearDown:
     inputName: 
     buttonState: 3
