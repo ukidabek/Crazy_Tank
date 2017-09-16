@@ -1,3 +1,6 @@
 [submodule "Assets/Logic/BaseGameLogic"]
 	path = Assets/Logic/BaseGameLogic
 	url = https://github.com/ukidabek/BaseGameLogic.git
+[submodule "Assets/Logic/Tools"]
+	path = Assets/Logic/Tools
+	url = https://github.com/ukidabek/UnityTools.git
